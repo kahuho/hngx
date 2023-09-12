@@ -10,8 +10,8 @@ def stage_one_endpoint(request):
     track = request.GET.get('track', '')
     current_day = timezone.now().strftime('%A')
     utc_time = timezone.now()
-    github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"
-    github_repo_url = "https://github.com/username/repo"
+    github_file_url = "https://github.com/kahuho/hngx/blob/main/hngx/api/views.py"
+    github_repo_url = "https://github.com/kahuho/hngx.git"
     
     # Save data to the database
     data = {
